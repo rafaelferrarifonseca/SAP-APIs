@@ -1,0 +1,62 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sfin:JournalEntryBulkCreateRequest>
+         <MessageHeader>
+            <ID>MSG20180731</ID>
+            <!--<ReferenceID></ReferenceID>-->
+            <CreationDateTime>2019-11-26T12:00:00.1234567Z</CreationDateTime>
+         </MessageHeader>
+         <!--1 or more repetitions:-->
+         <JournalEntryCreateRequest>
+            <MessageHeader>
+               <ID>>MSG20180731</ID>
+               <!--<ReferenceID></ReferenceID>-->
+               <CreationDateTime>2019-11-26T12:00:00.1234567Z</CreationDateTime>
+            </MessageHeader>
+            <JournalEntry>
+               <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+               <OriginalReferenceDocument/>
+               <OriginalReferenceDocumentLogicalSystem/>
+               <BusinessTransactionType>RFBU</BusinessTransactionType>
+               <AccountingDocumentType>BL</AccountingDocumentType>
+               <DocumentReferenceID>5000000000</DocumentReferenceID>
+               <DocumentHeaderText>Test AR Item Posting API </DocumentHeaderText>
+               <CreatedByUser>003380</CreatedByUser>
+               <CompanyCode>1122</CompanyCode>
+               <DocumentDate>2019-11-26</DocumentDate>
+               <PostingDate>2019-11-26</PostingDate>
+               <Reference1InDocumentHeader>12345678901234567890</Reference1InDocumentHeader>
+               <Reference2InDocumentHeader>1234567890</Reference2InDocumentHeader>
+               <Item>
+                  <!--Optional:-->
+                  <ReferenceDocumentItem>1</ReferenceDocumentItem>
+                  <GLAccount>311000001</GLAccount>
+                  <AmountInTransactionCurrency currencyCode="BRL">-100.00</AmountInTransactionCurrency>
+                  <DebitCreditCode>S</DebitCreditCode>
+                  <DocumentItemText>Test API Item 1</DocumentItemText>
+                  <AssignmentReference>123</AssignmentReference>
+                     <AccountAssignment>
+                     <ProfitCenter>1122001</ProfitCenter>
+                     <Segment></Segment>
+                     <FunctionalArea></FunctionalArea>
+                  </AccountAssignment>
+                  <ProfitabilitySupplement>
+                     <Customer></Customer>
+                  </ProfitabilitySupplement>
+               </Item>
+		<DebtorItem>
+                  <ReferenceDocumentItem>2</ReferenceDocumentItem>
+                  <Debtor>50000093</Debtor>
+                  <AmountInTransactionCurrency currencyCode="BRL">100.00</AmountInTransactionCurrency>
+                  <DebitCreditCode>H</DebitCreditCode>
+                  <DocumentItemText>Customer item 1</DocumentItemText>
+               </DebtorItem>
+
+
+               <!--Zero or more repetitions:-->
+             </JournalEntry>
+         </JournalEntryCreateRequest>
+      </sfin:JournalEntryBulkCreateRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
