@@ -1,0 +1,239 @@
+
+{
+  "d" : {
+    "BusinessPartnerGrouping" : "ZBJU",
+    "to_BusinessPartnerAddress" : [
+      {
+        "StreetName" : "R São João",
+        "HouseNumberSupplementText" : "",
+        "HouseNumber" : "1764",
+        "Language" : "PT",
+        "FullName" : "Nome do Fornecedor",
+        "Country" : "BR",
+        "PostalCode" : "30315-030",
+        "Region" : "MG",
+        "TaxJurisdiction" : "",
+        "CityName" : "BELO HORIZONTE",
+        "District" : "SAVASSI"
+      }
+    ],
+    "FormOfAddress" : "0003",
+    "to_Supplier" : {
+      "to_SupplierCompany" : {
+        "results" : [
+          {
+            "ReconciliationAccount" : "211000001",
+            "to_SupplierWithHoldingTax" : {
+              "results" : [
+                {
+                  "WithholdingTaxCode" : "R2",
+                  "WithholdingTaxType" : "IR",
+                  "IsWithholdingTaxSubject" : true,
+                  "CompanyCode" : "1122"
+                }
+              ]
+            },
+            "SupplierAccountGroup" : "ZBVJ",
+            "CompanyCode" : "1122",
+            "CashPlanningGroup" : "A1"
+          }
+        ]
+      },
+      "SupplierAccountGroup" : "ZBVJ"
+    },
+    "BusinessPartnerCategory" : "2",
+    "OrganizationBPName4" : "",
+    "to_BuPaIdentification" : [
+      {
+        "BPIdentificationType" : "ZBR001",
+        "BPIdentificationNumber" : "16173"
+      }
+    ],
+    "OrganizationBPName2" : "",
+    "OrganizationBPName3" : "",
+    "OrganizationBPName1" : "BOTECO DO MADRUGA",
+    "CorrespondenceLanguage" : "PT",
+    "BusinessPartnerIsBlocked" : false,
+    "ZZ1_SearchTerm2_bus" : "MADRUGA",
+    "BusinessPartnerFullName" : "MADRUGA LTDA",
+    "IsMarkedForArchiving" : false,
+    "to_BusinessPartnerTax" : [
+      {
+        "BPTaxType" : "BR1",
+        "BPTaxNumber" : "12315693000195"
+      }
+    ],
+    "to_BusinessPartnerRole" : [
+      {
+        "BusinessPartnerRole" : "FLCU01",
+        "ValidTo" : "2050-12-31T00:00:00",
+        "ValidFrom" : "2000-01-01T00:00:00"
+      },
+      {
+        "BusinessPartnerRole" : "FLCU00",
+        "ValidTo" : "2050-12-31T00:00:00",
+        "ValidFrom" : "2000-01-01T00:00:00"
+      },
+      {
+        "BusinessPartnerRole" : "FLVN00",
+        "ValidTo" : "2050-12-31T00:00:00",
+        "ValidFrom" : "2000-01-01T00:00:00"
+      }
+    ],
+    "Language" : "PT",
+    "to_Customer" : {
+      "CustomerAccountGroup" : "ZBCJ",
+      "to_CustomerCompany" : {
+        "results" : [
+          {
+            "ReconciliationAccount" : "113000001",
+            "to_WithHoldingTax" : {
+              "results" : [
+                {
+                  "ObligationDateEnd" : "2050-12-31T00:00:00",
+                  "ObligationDateBegin" : "2000-01-01T00:00:00",
+                  "WithholdingTaxCode" : "IW",
+                  "WithholdingTaxType" : "IW",
+                  "WithholdingTaxAgent" : true,
+                  "CompanyCode" : "1122"
+                },
+                {
+                  "ObligationDateEnd" : "2050-12-31T00:00:00",
+                  "ObligationDateBegin" : "2000-01-01T00:00:00",
+                  "WithholdingTaxCode" : "ZR",
+                  "WithholdingTaxType" : "ZR",
+                  "WithholdingTaxAgent" : true,
+                  "CompanyCode" : "1122"
+                }
+              ]
+            },
+            "CustomerAccountGroup" : "ZBCJ",
+            "ZZ1_CashPlanningGroup_cco" : "E2",
+            "CompanyCode" : "1122"
+          }
+        ]
+      },
+      "to_CustomerSalesArea" : {
+        "results" : [
+          {
+            "ItemOrderProbabilityInPercent" : "100",
+            "CustomerAccountGroup" : "ZBCJ",
+            
+            "Currency" : "BRL",
+            "CustomerAccountAssignmentGroup" : "01",
+            "DistributionChannel" : "10",
+            "SalesOrganization" : "1000",
+            "Division" : "10",
+            "CustomerPriceGroup" : "01",
+            "to_PartnerFunction" : {
+              "results" : [
+                {
+                  "PartnerFunction" : "WE"
+                },
+                {
+                  "PartnerFunction" : "PC"
+                },
+                {
+                  "PartnerFunction" : "RF"
+                },
+                {
+                  "PartnerFunction" : "PG"
+                }
+              ]
+            },
+            "CustomerPricingProcedure" : "01",
+            "OrderCombinationIsAllowed" : true
+          },
+          {
+            "ItemOrderProbabilityInPercent" : "100",
+            "CustomerAccountGroup" : "ZBCJ",
+            
+            "Currency" : "BRL",
+            "CustomerAccountAssignmentGroup" : "01",
+            "DistributionChannel" : "20",
+            "SalesOrganization" : "1000",
+            "Division" : "10",
+            "CustomerPriceGroup" : "01",
+            "to_PartnerFunction" : {
+              "results" : [
+                {
+                  "PartnerFunction" : "WE"
+                },
+                {
+                  "PartnerFunction" : "PC"
+                },
+                {
+                  "PartnerFunction" : "RF"
+                },
+                {
+                  "PartnerFunction" : "PG"
+                }
+              ]
+            },
+            "CustomerPricingProcedure" : "01",
+            "OrderCombinationIsAllowed" : true
+          },
+          {
+            "ItemOrderProbabilityInPercent" : "100",
+            "CustomerAccountGroup" : "ZBCJ",
+            
+            "Currency" : "BRL",
+            "CustomerAccountAssignmentGroup" : "01",
+            "DistributionChannel" : "30",
+            "SalesOrganization" : "1000",
+            "Division" : "10",
+            "CustomerPriceGroup" : "01",
+            "to_PartnerFunction" : {
+              "results" : [
+                {
+                  "PartnerFunction" : "WE"
+                },
+                {
+                  "PartnerFunction" : "PC"
+                },
+                {
+                  "PartnerFunction" : "RF"
+                },
+                {
+                  "PartnerFunction" : "PG"
+                }
+              ]
+            },
+            "CustomerPricingProcedure" : "01",
+            "OrderCombinationIsAllowed" : true
+          },
+          {
+            "ItemOrderProbabilityInPercent" : "100",
+            "CustomerAccountGroup" : "ZBCJ",
+            
+            "Currency" : "BRL",
+            "CustomerAccountAssignmentGroup" : "01",
+            "DistributionChannel" : "40",
+            "SalesOrganization" : "1000",
+            "Division" : "10",
+            "CustomerPriceGroup" : "01",
+            "to_PartnerFunction" : {
+              "results" : [
+                {
+                  "PartnerFunction" : "WE"
+                },
+                {
+                  "PartnerFunction" : "PC"
+                },
+                {
+                  "PartnerFunction" : "RF"
+                },
+                {
+                  "PartnerFunction" : "PG"
+                }
+              ]
+            },
+            "CustomerPricingProcedure" : "01",
+            "OrderCombinationIsAllowed" : true
+          }
+        ]
+      }
+    },
+    "SearchTerm1" : "236173"
+  }
+}
