@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sfin:JournalEntryBulkCreateRequest>
+         <MessageHeader>
+            <ID>MSG_2018-07-31</ID>
+            <!--<ReferenceID></ReferenceID>-->
+            <CreationDateTime>2020-03-03T12:00:00.1234567Z</CreationDateTime>
+         </MessageHeader>
+         <!--1 or more repetitions:-->
+         <JournalEntryCreateRequest>
+            <MessageHeader>
+               <ID>SUB_MSG_2018-07-18</ID>
+               <!--<ReferenceID></ReferenceID>-->	 
+               <CreationDateTime>2020-03-03T12:00:00.1234567Z</CreationDateTime>
+            </MessageHeader>
+            <JournalEntry>
+               <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+               <OriginalReferenceDocument/>
+               <OriginalReferenceDocumentLogicalSystem/>
+               <BusinessTransactionType>RFST</BusinessTransactionType>
+               <AccountingDocumentType>AV</AccountingDocumentType>
+               <DocumentHeaderText>Teste Exp. Mobi Adto</DocumentHeaderText>
+               <CreatedByUser>003380</CreatedByUser>
+               <CompanyCode>1122</CompanyCode>
+               <DocumentDate>2020-03-03</DocumentDate>
+               <PostingDate>2020-03-03</PostingDate>
+               <DocumentReferenceID>123</DocumentReferenceID>
+	      <CreditorItem>
+                  <ReferenceDocumentItem>2</ReferenceDocumentItem>
+		  <BusinessPlace>0001</BusinessPlace>
+                  <Creditor>50001767</Creditor>
+                  <AmountInTransactionCurrency currencyCode="BRL">-100.00</AmountInTransactionCurrency>
+                  <DebitCreditCode>S</DebitCreditCode>
+                  <DocumentItemText>Vender Item</DocumentItemText>
+                  <AssignmentReference>DOWN PAYMENT</AssignmentReference>
+                  <CashDiscountTerms>
+                     <DueCalculationBaseDate>2020-04-29</DueCalculationBaseDate>
+                     <CashDiscount1Days>0</CashDiscount1Days>
+                     <CashDiscount1Percent>0</CashDiscount1Percent>
+                     <CashDiscount2Days>0</CashDiscount2Days>
+                     <CashDiscount2Percent>0</CashDiscount2Percent>
+                     <NetPaymentDays>0</NetPaymentDays>
+                  </CashDiscountTerms>
+                  <DownPaymentTerms>
+                     <SpecialGLCode>T</SpecialGLCode>
+                  </DownPaymentTerms>
+               </CreditorItem>
+            </JournalEntry>
+         </JournalEntryCreateRequest>
+      </sfin:JournalEntryBulkCreateRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
