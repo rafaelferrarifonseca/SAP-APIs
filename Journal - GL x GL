@@ -1,0 +1,61 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sfin:JournalEntryBulkCreateRequest>
+         <MessageHeader>
+            <ID>MSG_2018-10-31</ID>
+            <!--<ReferenceID></ReferenceID>-->
+            <CreationDateTime>2018-10-31T12:00:00.1234567Z</CreationDateTime>
+         </MessageHeader>
+         <!--1 or more repetitions:-->
+         <JournalEntryCreateRequest>
+            <MessageHeader>
+               <ID>SUB_MSG_2018-10-31</ID>
+               <!--<ReferenceID></ReferenceID>-->
+               <CreationDateTime>2019-11-29T12:00:00.1234567Z</CreationDateTime>
+            </MessageHeader>
+            <JournalEntry>
+               <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+               <OriginalReferenceDocument/>
+               <OriginalReferenceDocumentLogicalSystem/>
+               <BusinessTransactionType>RFBU</BusinessTransactionType>
+               <AccountingDocumentType>SA</AccountingDocumentType>
+               <DocumentReferenceID>123</DocumentReferenceID>
+               <DocumentHeaderText>Test JE Posting</DocumentHeaderText>
+               <CreatedByUser>003380</CreatedByUser>
+               <CompanyCode>1122</CompanyCode>
+               <DocumentDate>2019-11-29</DocumentDate>
+               <PostingDate>2019-11-29</PostingDate>
+               <Reference1InDocumentHeader>12345678901234567890</Reference1InDocumentHeader>
+               <Reference2InDocumentHeader>1234567890</Reference2InDocumentHeader>
+               <Item>
+                  <!--Optional:-->
+                  <ReferenceDocumentItem>1</ReferenceDocumentItem>
+				  <GLAccount>420000028</GLAccount>
+                  <AmountInTransactionCurrency currencyCode="BRL">1000</AmountInTransactionCurrency>
+                  <DebitCreditCode>S</DebitCreditCode>
+                  <DocumentItemText>Test Item 1</DocumentItemText>
+                  <AccountAssignment>
+                     <CostCenter>1122010101</CostCenter>
+				     <BusinessPlace>0001</BusinessPlace>
+		             <ProfitCenter>1122001</ProfitCenter>
+                  </AccountAssignment>
+               </Item>
+               <Item>
+                  <!--Optional:-->
+                  <ReferenceDocumentItem>2</ReferenceDocumentItem>
+                  <GLAccount>114000006</GLAccount>
+                  <AmountInTransactionCurrency currencyCode="BRL">-1000</AmountInTransactionCurrency>
+                  <DebitCreditCode>H</DebitCreditCode>
+                  <DocumentItemText>Test Item 2</DocumentItemText>
+                  <AccountAssignment>
+                     <CostCenter></CostCenter>
+					 <BusinessPlace>0001</BusinessPlace>
+					<ProfitCenter>1122001</ProfitCenter>
+                  </AccountAssignment>
+               </Item>
+            </JournalEntry>
+         </JournalEntryCreateRequest>
+      </sfin:JournalEntryBulkCreateRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
