@@ -1,0 +1,276 @@
+{
+  "BusinessPartnerGrouping": "ZBFI",
+  "to_BusinessPartnerAddress": [
+    {
+      "StreetName": "Rua Gomes",
+      "HouseNumberSupplementText": "22B",
+      "HouseNumber": "100",
+      "Language": "PT",
+      "FullName": "Customer Name",
+      "Country": "BR",
+      "PostalCode": "05303-000",
+      "Region": "SP",
+      "TaxJurisdiction": "",
+      "CityName": "São Paulo",
+      "District": "Vila Leopoldina"
+    }
+	
+	"to_EmailAddress": {
+                        "results": [
+                            {
+                                "OrdinalNumber": "1",   -----> Caso tenha mais de 1 email, esse numero vai somando
+                                "IsDefaultEmailAddress": true, ------> Se é o email principal
+                                "EmailAddress": "email@email.com"
+                            }
+                        ]
+                    },
+					
+	 "to_PhoneNumber": {
+                        "results": [
+                            {
+                                "OrdinalNumber": "1",
+                                "IsDefaultPhoneNumber": true,
+                                "PhoneNumber": "99999999"
+                            }
+                        ]
+                    }
+
+	
+  ],
+   "to_BusinessPartnerBank": [
+    {
+      "BankName": "341",
+      "BankControlKey": " 7",
+      "BankNumber": "000190249",
+      "BankIdentification": "01",
+      "BankAccount": "00989",
+      "BankCountryKey": "BR"
+    }
+   ], 
+  
+  "IsFemale": false,
+  "FormOfAddress": "0002",
+  "to_Supplier": {
+    "to_SupplierCompany": {
+      "results": [
+        {
+          "ReconciliationAccount": "210000001",
+          "to_SupplierWithHoldingTax": {
+            "results": [
+              {
+                "WithholdingTaxCode": "R2",
+                "WithholdingTaxType": "IR",
+                "IsWithholdingTaxSubject": true,
+                "CompanyCode": "1122"
+              }
+            ]
+          },
+          "SupplierAccountGroup": "ZBVF",
+          "CompanyCode": "1122",
+          "CashPlanningGroup": "A1"
+        }
+      ]
+    },
+    "SupplierAccountGroup": "ZBVF"
+  },
+  "BusinessPartnerCategory": "1",
+  "FirstName": "Rafael Consumidor Final",
+  "to_BuPaIdentification": [
+    {
+      "BPIdentificationType": "ZBR001",
+      "BPIdentificationNumber": "33528836"
+    }
+  ],
+  "CorrespondenceLanguage": "PT",
+  "BusinessPartnerIsBlocked": false,
+  "ZZ1_SearchTerm2_bus": "Customer Rafael ",
+  "IsNaturalPerson": "X",
+  "IsSexUnknown": true,
+  "BusinessPartnerFullName": "Nome do Consumidor Completo",
+  "IsMarkedForArchiving": false,
+  "to_BusinessPartnerTax": [
+    {
+      "BPTaxType": "BR2",
+      "BPTaxNumber": "13632237010"
+    }
+  ],
+  "to_BusinessPartnerRole": [
+    {
+      "BusinessPartnerRole": "FLCU01",
+      "ValidTo": "2050-12-31T00:00:00",
+      "ValidFrom": "2000-01-01T00:00:00"
+    },
+    {
+      "BusinessPartnerRole": "FLCU00",
+      "ValidTo": "2050-12-31T00:00:00",
+      "ValidFrom": "2000-01-01T00:00:00"
+    },
+    {
+      "BusinessPartnerRole": "FLVN00",
+      "ValidTo": "2050-12-31T00:00:00",
+      "ValidFrom": "2000-01-01T00:00:00"
+    }
+  ],
+  "Language": "PT",
+  "to_Customer": {
+    "CustomerAccountGroup": "ZBCF",
+    "to_CustomerCompany": {
+      "results": [
+        {
+          "ReconciliationAccount": "113000001",
+          "to_WithHoldingTax": {
+            "results": [
+              {
+                "ObligationDateEnd": "2050-12-31T00:00:00",
+                "ObligationDateBegin": "2000-01-01T00:00:00",
+                "WithholdingTaxCode": "IW",
+                "WithholdingTaxType": "IW",
+                "WithholdingTaxAgent": true,
+                "CompanyCode": "1122"
+              },
+              {
+                "ObligationDateEnd": "2050-12-31T00:00:00",
+                "ObligationDateBegin": "2000-01-01T00:00:00",
+                "WithholdingTaxCode": "ZR",
+                "WithholdingTaxType": "ZR",
+                "WithholdingTaxAgent": true,
+                "CompanyCode": "1122"
+              }
+            ]
+          },
+          "CustomerAccountGroup": "ZBCF",
+          "ZZ1_CashPlanningGroup_cco": "E2",
+          "CompanyCode": "1122"
+        }
+      ]
+    },
+    "to_CustomerSalesArea": {
+      "results": [
+        {
+          "ItemOrderProbabilityInPercent": "100",
+          "CustomerAccountGroup": "ZBCF",
+          "to_SalesAreaTax": {
+            "results": [
+              {
+                "CustomerTaxCategory": "IBRX",
+                "CustomerTaxClassification": "1",
+                "DepartureCountry": "BR"
+              }
+            ]
+          },
+          "Currency": "BRL",
+          "CustomerAccountAssignmentGroup": "01",
+          "DistributionChannel": "10",
+          "SalesOrganization": "1000",
+          "Division": "10",
+          "CustomerPriceGroup": "01",
+          "to_PartnerFunction": {
+            "results": [
+              {
+                "PartnerFunction": "WE"
+              },
+              {
+                "PartnerFunction": "PC"
+              },
+              {
+                "PartnerFunction": "RF"
+              },
+              {
+                "PartnerFunction": "PG"
+              }
+            ]
+          },
+          "CustomerPricingProcedure": "01",
+          "OrderCombinationIsAllowed": true
+        },
+        {
+          "ItemOrderProbabilityInPercent": "100",
+          "CustomerAccountGroup": "ZBCF",
+          "Currency": "BRL",
+          "CustomerAccountAssignmentGroup": "01",
+          "DistributionChannel": "20",
+          "SalesOrganization": "1000",
+          "Division": "10",
+          "CustomerPriceGroup": "01",
+          "to_PartnerFunction": {
+            "results": [
+              {
+                "PartnerFunction": "WE"
+              },
+              {
+                "PartnerFunction": "PC"
+              },
+              {
+                "PartnerFunction": "RF"
+              },
+              {
+                "PartnerFunction": "PG"
+              }
+            ]
+          },
+          "CustomerPricingProcedure": "01",
+          "OrderCombinationIsAllowed": true
+        },
+        {
+          "ItemOrderProbabilityInPercent": "100",
+          "CustomerAccountGroup": "ZBCF",
+          "Currency": "BRL",
+          "CustomerAccountAssignmentGroup": "01",
+          "DistributionChannel": "30",
+          "SalesOrganization": "1000",
+          "Division": "10",
+          "CustomerPriceGroup": "01",
+          "to_PartnerFunction": {
+            "results": [
+              {
+                "PartnerFunction": "WE"
+              },
+              {
+                "PartnerFunction": "PC"
+              },
+              {
+                "PartnerFunction": "RF"
+              },
+              {
+                "PartnerFunction": "PG"
+              }
+            ]
+          },
+          "CustomerPricingProcedure": "01",
+          "OrderCombinationIsAllowed": true
+        },
+        {
+          "ItemOrderProbabilityInPercent": "100",
+          "CustomerAccountGroup": "ZBCF",
+          "Currency": "BRL",
+          "CustomerAccountAssignmentGroup": "01",
+          "DistributionChannel": "40",
+          "SalesOrganization": "1000",
+          "Division": "10",
+          "CustomerPriceGroup": "01",
+          "to_PartnerFunction": {
+            "results": [
+              {
+                "PartnerFunction": "WE"
+              },
+              {
+                "PartnerFunction": "PC"
+              },
+              {
+                "PartnerFunction": "RF"
+              },
+              {
+                "PartnerFunction": "PG"
+              }
+            ]
+          },
+          "CustomerPricingProcedure": "01",
+          "OrderCombinationIsAllowed": true
+        }
+      ]
+    }
+  },
+  "LastName": "SobreNome",
+  "IsMale": true,
+  "SearchTerm1": "1528836"
+}
